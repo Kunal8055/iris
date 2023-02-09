@@ -1,0 +1,32 @@
+<html>
+    <body bgcolor="DarkGrey">
+
+        <center>
+
+        <h1> What to find about Iris Flower</h1><br>
+        
+        <form method="POST", action="{{url_for('predicted')}}">
+
+            <b>
+             
+            <label for="specification">Choose to find :</label>
+                <select name="specification" id="specification">
+                    <option value=0>Classification of Iris Flower</option>
+                    <option value=1>Petal Length of Iris Flower</option>
+                    <option value=2>Petal Width of Iris Flower</option>
+                    <option value=3>Sepal Length of Iris Flower</option>
+                    <option value=4>Sepal Width of Iris Flower</option>
+                    
+                </select><br><br>
+           
+            
+            
+			            <input type="submit" , value='predict' >
+        </form>
+
+
+        
+    </center>
+
+    </body>
+</html>

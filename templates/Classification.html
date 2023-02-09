@@ -1,0 +1,26 @@
+<html>
+    <body bgcolor="DarkGrey">
+
+        <center>
+
+        <h1> IRIS FLOWER CLASSIFICATION </h1><br>
+        
+        <form method="POST", action="{{url_for('Classification')}}">
+
+            <b>
+                SepallengthhCm : <input type="text", name='SepalLengthCm', placeholder="enter your SepallengthCm "> <br><br>
+                SepalWidthCm : <input type="text", name='SepalWidthCm', placeholder="enter your SepalWidthCm "> <br><br>       
+            PetalLengthCm :  <input type="text", name='PetalLengthCm', placeholder="enter PetalLengthCm"> <br><br>
+            PetalWidthCm :  <input type="text", name='PetalWidthCm', placeholder="enter PetalWidthCm"> <br><br>
+            {{result1}}
+            
+            
+			            <input type="submit" , value='predict' >
+        </form>
+
+
+        
+    </center>
+
+    </body>
+</html>

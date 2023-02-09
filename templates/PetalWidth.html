@@ -1,0 +1,32 @@
+<html>
+    <body bgcolor="DarkGrey">
+
+        <center>
+
+        <h1> IRIS FLOWER PETAL WIDTH </h1><br>
+        
+        <form method="POST", action="{{url_for('Petal_Width')}}">
+
+            <b>
+                SepallengthhCm : <input type="text", name='SepalLengthCm', placeholder="enter your SepallengthCm "> <br><br>
+                SepalWidthCm : <input type="text", name='SepalWidthCm', placeholder="enter your SepalWidthCm "> <br><br>       
+               
+                PetalLengthCm :  <input type="text", name='PetalLengthCm', placeholder="enter PetalLengthCm"> <br><br>
+            <label for="Iris Flower">Choose a Iris Flower :</label>
+            <select name="Iris Flower" id="Iris Flower">
+                <option value=0>Iris-setosa</option>
+                <option value=1>Iris-versicolor</option>
+                <option value=2>Iris-virginica</option>                  
+            </select><br><br>
+            {{result1}}
+            
+            
+			            <input type="submit" , value='predict' >
+        </form>
+
+
+        
+    </center>
+
+    </body>
+</html>
